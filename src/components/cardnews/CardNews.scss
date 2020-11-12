@@ -1,0 +1,40 @@
+.wrapper-cardNews{
+    display: flex;
+    height: auto;
+
+    // img
+    .img-card{
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    // box content
+    .box-content-paragraph{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+
+        .title{
+            display: flex;
+            color: steelblue;
+            text-align: start;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover{
+                color: #000;
+            }
+        }
+
+        .deskripsi{
+            display: flex;
+            color: #555;
+            text-align: start;
+            font-weight: 500;
+            overflow: hidden;
+        }
+    }
+}

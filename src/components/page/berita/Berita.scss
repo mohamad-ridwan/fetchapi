@@ -1,0 +1,55 @@
+.wrapper-berita{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 40px 15%;
+    margin-top: 10px;
+    justify-content: flex-start;
+    text-align: start;
+
+    .title-berita{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-img{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+
+            .img-berita{
+                display: flex;
+                height: auto;
+                width: 500px;
+                object-fit: cover;
+                object-position: center;
+                justify-content: center;
+                transition: 0.3s ease-out;
+                cursor: pointer;
+                margin: 10px 0;
+        
+                &:hover{
+                    box-shadow: 0 3px 6px -1px rgba(0,0,0,0.5);
+                }
+            }
+        
+    }
+
+    .box-author{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc-berita{
+        display: flex;
+        margin-top: 30px;
+    }
+}

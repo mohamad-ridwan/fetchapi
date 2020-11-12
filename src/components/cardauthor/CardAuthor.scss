@@ -1,0 +1,31 @@
+.box-author{
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+
+    i{
+        display: flex;
+        color: #aaa;
+        margin-right: 3px;
+        padding: 1px;
+    }
+
+    // txtGroup
+    .txtGroup{
+        display: flex;
+        color: #aaa;
+    }
+    // end txtGroup
+
+    #date{
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #comment{
+        display: flex;
+        margin-left: 20px;
+    }
+
+}

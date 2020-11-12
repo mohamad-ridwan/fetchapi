@@ -1,0 +1,119 @@
+.wrapper-home{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 0 15% 40px 15%;
+
+    // section one
+    .section-one{
+        display: flex;
+        height: auto;
+        width: 100%;
+
+        // row kiri
+        .rowKiri{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 70%;
+        }
+        // end row kiri
+
+        // row kanan
+        .rowKanan{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 30%;
+            border-right: 3px solid #eee;
+            border-bottom: 3px solid #eee;
+            padding: 20px;
+
+            // column sosmed
+            .column-sosmed{
+                display: flex;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                justify-content: space-between;
+            }
+            // end column sosmed
+
+            // profil
+            .column-profil{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                justify-content: flex-start;
+                text-align: start;
+                
+                .welcome{
+                    display: flex;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #eee;
+                    margin-top: 20px;
+                }
+
+                .img-profil{
+                    display: flex;
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-top: 20px;
+                }            
+
+                .name-profil{
+                    display: flex;
+                    margin-top: 10px;
+                    padding-bottom: 5px;
+                    color: #002480;
+                    border-bottom: 2px solid #eee;
+                    transition: 0.3s ease-out;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #000;
+                    }
+                }
+
+                .subject-profil{
+                    display: flex;
+                    font-size: 11pt;
+                    font-weight: 500;
+                    margin-top: 10px;
+                    color: #555;
+                }
+            }
+            // end profil
+        }
+        // end row kanan
+    }
+    // end section one
+
+    // section two
+    .section-two{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+
+        .title-berita-two{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .column-card{
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+    }
+    // end sectiont two
+}

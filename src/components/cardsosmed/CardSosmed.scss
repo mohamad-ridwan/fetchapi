@@ -1,0 +1,34 @@
+.card-sosmed{
+    display: flex;
+    height: 50px;
+    width: calc(96%/2);
+    cursor: pointer;
+
+    .btn-icon{
+        display: flex;
+        height: 100%;
+        width: 30%;
+        border: none;
+        outline: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        i{
+            display: flex;
+            font-size: 12pt;
+            color: #fff;
+        }
+    }
+
+    .name-sosmed{
+        display: flex;
+        height: 100%;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 11pt;
+    }
+    
+}
