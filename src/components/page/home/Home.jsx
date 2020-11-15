@@ -26,6 +26,34 @@ const Home = ()=>{
         })
     },[])
 
+
+    // POST
+    const [userInput, setUserInput] = useState({
+        title: '',
+        body: '',
+        image: '',
+    })
+
+    let handleSubmit = (e)=>{
+        e.handleSubmit()
+
+        Axios.post('http://localhost:4000/v2/blog/post', {
+            body: JSON.stringify({
+                title : userInput.title,
+                body: userInput.body,
+                image: userInput.image
+            })
+        })
+        .then(result=>{
+            const resAPI = result.data
+
+            setUserInput(resAPI.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    }
+
         return(
             <>
         <div className="wrapper-home">
@@ -160,13 +188,56 @@ const Home = ()=>{
                                 bdrRadius={"5px"}
                                 cursorWrapp={"pointer"}
                                 bxShadow={"0 1px 4px -1px rgba(0,0,0,0.2)"}
-                                heightImg={"200px"}
+                                heightImg={"auto"}
+                                maxHeightImg={"200px"}
+                                maxHeightWrapp={"auto"}
                             />
                         )
                     })}
                 </div>
             </section>
             {/* end section two */}
+
+            {/* Section three */}
+            <div className="section-three">
+                <h2 className="judul-input">
+                    Input Blog Post
+                </h2>
+                
+                <form type="submit" className="box-input" onSubmit={handleSubmit}>
+                    <input type="text" className="input-title inputGroup" placeholder="masukkan title"
+                        onChange={(e)=>{
+                            setUserInput({
+                                ...userInput,
+                                title : e.target.value
+                            })
+                            console.log(userInput);
+                        }}
+                    />
+                    <textarea type="text" className="input-body inputGroup" placeholder="masukkan body"
+                        onChange={(e)=>{
+                            setUserInput({
+                                ...userInput,
+                                body : e.target.value
+                            })
+                            console.log(userInput);
+                        }}
+                    />
+                    <input type="file" name="img" accept="image/*" 
+                        onChange={(e)=>{
+                            setUserInput({
+                                ...userInput,
+                                image : e.target.value
+                            })
+                            console.log(userInput);
+                        }}
+                    ></input>
+                    <button className="btn-submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            {/* end section three */}
         </div>
         </>
         )

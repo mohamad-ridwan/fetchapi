@@ -31,6 +31,7 @@ const CardNews=({
     fontAuth,
     fontDesk,
     deskripsi,
+    maxHeightImg
 
 })=>{
     return(
@@ -51,6 +52,7 @@ const CardNews=({
         }}>
             <img src={imgCard} alt="" className="img-card" style={{
                 height: `${heightImg}`,
+                maxHeight: `${maxHeightImg}`,
                 width: `${widthImg}`
             }}/>
             
