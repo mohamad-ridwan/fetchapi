@@ -1,44 +1,30 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import CardNews from '../../cardnews/CardNews'
 import CardSosmed from '../../cardsosmed/CardSosmed'
 import Navbar from '../../navbar/Navbar'
 import './Home.scss'
 import profil from '../../../img/profil.jpeg'
 import Axios from 'axios'
-import img from '../../../img/2.jpeg'
 
-class Home extends Component{
+const Home = ()=>{
+    const [dataBlog, setDataBlog] = useState([]);
 
-    state = {
-        getCard : [],
-        beritaTerkini: []
-    }
 
-    componentWillMount(){
-        Axios.get("http://localhost:3001/cardshome?userId=1")
-       .then((result)=>{
-            this.setState({
-                getCard: result.data
-            })
-       })
-       .catch(function(error){
-           console.log(error);
-       })
-    }
+    useEffect(()=>{
+        Axios.get('http://localhost:4000/v2/blog/posts?perPage=5')
+        // Jika Berhasil Masuk ke then()
+        .then(result=>{
+            console.log('data API :', result.data)
+            const responsAPI = result.data
 
-    componentDidMount(){
-        Axios.get("http://localhost:3001/beritaTerkini?userId=2")
-        .then((res)=>{
-            this.setState({
-                beritaTerkini: res.data
-            })
+            // Call Data API dari state
+            setDataBlog(responsAPI.data)
         })
-        .catch(function(error){
-            console.log(error)
+        // Jika gagal masuk ke catch()
+        .catch(err=>{
+            console.log('error:', err)
         })
-    }
-
-    render(){
+    },[])
 
         return(
             <>
@@ -48,15 +34,16 @@ class Home extends Component{
                 {/* row kiri */}
                 <div className="rowKiri">
                     {/* Mapping Data */}
-                    {this.state.getCard.map(e=>{
+                    {dataBlog.map(e=>{
                         return (
                             <CardNews
-                            key={e.id}
-                            imgCard={`https://picsum.photos/100/100?${e.image}`}
+                            key={e._id}
+                            imgCard={`http://localhost:4000/${e.image}`}
                             title={e.title}
-                            deskripsi={e.deskripsi}
-                            nameCard={e.name}
-                            date={e.date}
+                            deskripsi={e.body}
+                            // nameCard={e.name}
+                            date={e.updatedAt}
+                            nameCard={e.author.name}
                             bdrBottom={"3px solid #eee"}
                             bdrLeft={"3px solid #eee"}
                             bdrRight={"3px solid #eee"}
@@ -151,14 +138,14 @@ class Home extends Component{
                 </h1>
 
                 <div className="column-card">
-                    {this.state.beritaTerkini.map(i=>{
+                    {dataBlog.map(i=>{
                         return(
                             <CardNews
-                                key={i.id}
-                                imgCard={img}
-                                nameCard={i.name}
+                                key={i._id}
+                                imgCard={`http://localhost:4000/${i.image}`}
+                                nameCard={i.author.name}
                                 date={i.date}
-                                deskripsi={i.deskripsi}
+                                deskripsi={i.body}
                                 flxDirecttion={"column"}
                                 widthWrapp={"calc(90%/3)"}
                                 widthImg={"100%"}
@@ -183,7 +170,6 @@ class Home extends Component{
         </div>
         </>
         )
-    }
 }
 
 export default Home
