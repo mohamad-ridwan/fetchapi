@@ -7,47 +7,47 @@ import profil from '../../../img/profil.jpeg'
 import Axios from 'axios'
 
 const Home = ()=>{
-    const [dataBlog, setDataBlog] = useState([]);
 
+    let [getData, setGetData] = useState([])
 
     useEffect(()=>{
-        Axios.get('http://localhost:4000/v2/blog/posts?perPage=5')
-        // Jika Berhasil Masuk ke then()
-        .then(result=>{
-            console.log('data API :', result.data)
-            const responsAPI = result.data
-
-            // Call Data API dari state
-            setDataBlog(responsAPI.data)
+        Axios.get("http://localhost:62542/v2/blog/posts")
+        // jika berhasil masuk
+        .then(result =>{
+            const resAPI = result.data
+            
+            setGetData(resAPI.data)
         })
-        // Jika gagal masuk ke catch()
         .catch(err=>{
-            console.log('error:', err)
+            console.log('data failed :', err)
         })
-    },[])
+    }, [])
 
-
-    // POST
-    const [userInput, setUserInput] = useState({
-        title: '',
-        body: '',
-        image: '',
+    const [postData, setPostData] = useState({
+        title : '',
+        deskripsi : ''
     })
 
-    let handleSubmit = (e)=>{
-        e.handleSubmit()
+    const handleSubmit = (e)=>{
+        e.preventDefault()
 
-        Axios.post('http://localhost:4000/v2/blog/post', {
+        fetch("http://localhost:3005/cardshome", {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                "Content-Type": "application/json"
+            },
             body: JSON.stringify({
-                title : userInput.title,
-                body: userInput.body,
-                image: userInput.image
+                title: postData.title,
+                deskripsi: postData.deskripsi
             })
         })
+        .then(res=>{
+            res.json()
+        })
         .then(result=>{
-            const resAPI = result.data
-
-            setUserInput(resAPI.data)
+            console.log(result)
+            setPostData(result)
         })
         .catch(err=>{
             console.log(err)
@@ -62,34 +62,36 @@ const Home = ()=>{
                 {/* row kiri */}
                 <div className="rowKiri">
                     {/* Mapping Data */}
-                    {dataBlog.map(e=>{
-                        return (
+
+                    {getData ? getData.map(e=>{
+                        return(
                             <CardNews
-                            key={e._id}
-                            imgCard={`http://localhost:4000/${e.image}`}
-                            title={e.title}
-                            deskripsi={e.body}
-                            // nameCard={e.name}
-                            date={e.updatedAt}
-                            nameCard={e.author.name}
-                            bdrBottom={"3px solid #eee"}
-                            bdrLeft={"3px solid #eee"}
-                            bdrRight={"3px solid #eee"}
-                            paddWrapp={"20px"}
-                            widthWrapp={"100%"}
-                            widthImg={"30%"}
-                            widthContent={"70%"}
-                            paddContent={"0 0 0 20px"}
-                            marginAuthor={"10px 0"}
-                            fontDesk={"11pt"}
-                            iconComment={"fas fa-comments"}
-                            comment={"Comment"}
-                            fontAuth={"11pt"}
-                            fontIcon={"9pt"}
-                            heightImg={"auto"}
-                        />
+                                key={e._id}
+                                imgCard={`http://localhost:62542/${e.image}`}
+                                title={e.title}
+                                deskripsi={e.body}
+                                flxDirecttion={"column"}
+                                widthWrapp={"calc(90%/3)"}
+                                widthImg={"100%"}
+                                widthContent={"100%"}
+                                marginAuthor={"0 0 10px 0"}
+                                fontDesk={"10pt"}
+                                fontIcon={"10pt"}
+                                fontAuth={"10pt"}
+                                paddContent={"10px"}
+                                mrgnWrapp={"20px 0"}
+                                bgColorWrapp={"#fff"}
+                                bdrRadius={"5px"}
+                                cursorWrapp={"pointer"}
+                                bxShadow={"0 1px 4px -1px rgba(0,0,0,0.2)"}
+                                heightImg={"auto"}
+                                maxHeightImg={"200px"}
+                                maxHeightWrapp={"auto"}
+                            />
                         )
-                    })}
+                    }) : (
+                        <div className="oke">oke</div>
+                    )}
                 </div>
                 {/* end row kiri */}
 
@@ -166,14 +168,15 @@ const Home = ()=>{
                 </h1>
 
                 <div className="column-card">
-                    {dataBlog.map(i=>{
+
+                    {/* Input yg di masukkan user */}
+                    {/* {userInput.map(e=>{
                         return(
                             <CardNews
-                                key={i._id}
-                                imgCard={`http://localhost:4000/${i.image}`}
-                                nameCard={i.author.name}
-                                date={i.date}
-                                deskripsi={i.body}
+                                key={e._id}
+                                imgCard={`http://localhost:4000/${e.image}`}
+                                title={e.title}
+                                deskripsi={e.body}
                                 flxDirecttion={"column"}
                                 widthWrapp={"calc(90%/3)"}
                                 widthImg={"100%"}
@@ -193,7 +196,8 @@ const Home = ()=>{
                                 maxHeightWrapp={"auto"}
                             />
                         )
-                    })}
+                    })} */}
+                    {/* end Input yg di masukkan user */}
                 </div>
             </section>
             {/* end section two */}
@@ -203,37 +207,40 @@ const Home = ()=>{
                 <h2 className="judul-input">
                     Input Blog Post
                 </h2>
+
+                <label htmlFor="label" className="label-change">
+                    Text Default
+                </label>
+
+                <input type="text" className="tes-input"
+                placeholder="tes real change text"
+                />
                 
-                <form type="submit" className="box-input" onSubmit={handleSubmit}>
+                <form type="submit" className="box-input">
                     <input type="text" className="input-title inputGroup" placeholder="masukkan title"
-                        onChange={(e)=>{
-                            setUserInput({
-                                ...userInput,
-                                title : e.target.value
-                            })
-                            console.log(userInput);
-                        }}
+                    onChange={(e)=>{
+                        setPostData({
+                            ...postData,
+                            title: e.target.value
+                        })
+                        console.log('input success', postData)
+                    }}
                     />
-                    <textarea type="text" className="input-body inputGroup" placeholder="masukkan body"
-                        onChange={(e)=>{
-                            setUserInput({
-                                ...userInput,
-                                body : e.target.value
-                            })
-                            console.log(userInput);
-                        }}
+                    <input type="text" className="input-body inputGroup" placeholder="masukkan body"
+                    onChange={(e)=>{
+                        setPostData({
+                            ...postData,
+                            deskripsi: e.target.value
+                        })
+                        console.log('input success', postData)
+                    }}
                     />
                     <input type="file" name="img" accept="image/*" 
-                        onChange={(e)=>{
-                            setUserInput({
-                                ...userInput,
-                                image : e.target.value
-                            })
-                            console.log(userInput);
-                        }}
                     ></input>
-                    <button className="btn-submit">
-                        Submit
+                    <button className="btn-submit"
+                        onClick={handleSubmit}
+                    >
+                        Simpan
                     </button>
                 </form>
             </div>

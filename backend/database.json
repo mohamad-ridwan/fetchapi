@@ -179,218 +179,278 @@
       "name": "Rahmat",
       "date": "04:00 AM",
       "deskripsi": "ex quod dolorem ea eum iure qui provident amet quia qui facere excepturi et repudiandae asperiores molestias provident minus incidunt vero fugit rerum sint sunt excepturi provident"
+    },
+    {
+      "title": "qqqq",
+      "deskripsi": "qqqqq",
+      "id": 21
+    },
+    {
+      "title": "qqqq",
+      "deskripsi": "qqqqq",
+      "id": 22
+    },
+    {
+      "title": "qqqqqq",
+      "deskripsi": "qqqqq",
+      "id": 23
+    },
+    {
+      "title": "qqqqqqqq",
+      "deskripsi": "qqqqqqqqq",
+      "id": 24
+    },
+    {
+      "title": "111111",
+      "deskripsi": "1111111111",
+      "id": 25
+    },
+    {
+      "title": "qqqqqqq",
+      "deskripsi": "qqqqq",
+      "id": 26
+    },
+    {
+      "title": "qqqqqqq",
+      "deskripsi": "qqqqq",
+      "id": 27
+    },
+    {
+      "title": "qqqqqqqqqqqqqqqq",
+      "deskripsi": "qqqqqqqqqqqqqqqq",
+      "id": 28
     }
   ],
   "beritaTerkini": [
     {
-        "userId": 1,
-        "id": 1,
-        "image": 1,
-        "title": "Inovasi Sosial Hitachi adalah Powering Good",
-        "name": "Rahmat",
-        "date": "04:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur cupiditate voluptas nisi! Unde."
-      },
-      {
-        "userId": 1,
-        "id": 2,
-        "image": 2,
-        "title": "Suami Sebut Anita Kolopaking Murung Usai Ambil Legal Fee dari Pinangki",
-        "name": "Mohamad Ridwan Apriyadi",
-        "date": "08:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum."
-      },
-      {
-        "userId": 1,
-        "id": 3,
-        "image": 3,
-        "title": "Kesal Tak Dapat Proyek, Pria 37 Tahun di Kalbar Tikam Kepala Desa",
-        "name": "Yoga",
-        "date": "06:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a"
-      },
-      {
-        "userId": 1,
-        "id": 4,
-        "image": 4,
-        "title": "Update Covid-19 di Aceh, Sumut, Sumbar, Riau, Kepri, Jambi, dan Bengkulu 11 November 2020",
-        "name": "Bayu",
-        "date": "02:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur cupiditate"
-      },
-      {
-        "userId": 1,
-        "id": 5,
-        "image": 5,
-        "title": "Puluhan Penghuni Pondok Pesantren di Bojongsari Depok Positif Covid-19",
-        "name": "Adit",
-        "date": "01:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisqua"
-      },
-      {
-        "userId": 1,
-        "id": 6,
-        "image": 6,
-        "title": "Distribusi Bantuan Pangan Nontunai di Kembangan",
-        "name": "Muhammad Dafa Arohman",
-        "date": "10:00 AM",
-        "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur"
-      },
-      {
-        "userId": 2,
-        "id": 7,
-        "image": 1,
-        "title": "Dana Desa Sisa Rp 34,6 Triliun, Hanya Bisa Digunakan untuk BLT dan PKTD",
-        "name": "Melly",
-        "date": "21:00 AM",
-        "deskripsi": "Wikipedia berawal sebagai proyek sampingan Nupedia berupa ensiklopedia bebas daring yang artikelnya ditulis oleh para ahli.[8] Larry Sanger, yang mendirikan Nupedia bersama Jimmy Wales, melontarkan ide mengenai ensiklopedi"
-      },
-      {
-        "userId": 2,
-        "id": 8,
-        "image": 2,
-        "title": "10 Lagu dan Podcast Terpopuler di Spotify Indonesia November 2020, Ada BLACKPINK",
-        "name": "Fitriani",
-        "date": "22:00 AM",
-        "deskripsi": "Sejak resmi diluncurkan pada tanggal 15 Januari 2001, Wikipedia bahasa Inggris telah mengalami perkembangan jumlah artikel yang luar biasa. Tanggal 21 Januari 2003, jumlah artikel yang dimiliki telah mencapai"
-      },
-      {
-        "userId": 2,
-        "id": 9,
-        "image": 3,
-        "title": "Ketika Lima Sutradara Bercerita dalam Quarantine Tales",
-        "name": "Anggi",
-        "date": "23:00 AM",
-        "deskripsi": "Setiap orang yang ingin menggunakan isi bebas Wikipedia, kapan pun, dapat mengunduh artikel yang mendekati versi terbaru di dalam pangkalan data untuk tujuan bebas, dengan syarat LDBG."
-      },
-      {
-        "userId": 2,
-        "id": 7,
-        "image": 1,
-        "title": "Dana Desa Sisa Rp 34,6 Triliun, Hanya Bisa Digunakan untuk BLT dan PKTD",
-        "name": "Melly",
-        "date": "21:00 AM",
-        "deskripsi": "Wikipedia berawal sebagai proyek sampingan Nupedia berupa ensiklopedia bebas daring yang artikelnya ditulis oleh para ahli.[8] Larry Sanger, yang mendirikan Nupedia bersama Jimmy Wales, melontarkan ide mengenai ensiklopedi"
-      },
-      {
-        "userId": 2,
-        "id": 8,
-        "image": 2,
-        "title": "10 Lagu dan Podcast Terpopuler di Spotify Indonesia November 2020, Ada BLACKPINK",
-        "name": "Fitriani",
-        "date": "22:00 AM",
-        "deskripsi": "Sejak resmi diluncurkan pada tanggal 15 Januari 2001, Wikipedia bahasa Inggris telah mengalami perkembangan jumlah artikel yang luar biasa. Tanggal 21 Januari 2003, jumlah artikel yang dimiliki telah mencapai"
-      },
-      {
-        "userId": 2,
-        "id": 9,
-        "image": 3,
-        "title": "Ketika Lima Sutradara Bercerita dalam Quarantine Tales",
-        "name": "Anggi",
-        "date": "23:00 AM",
-        "deskripsi": "Setiap orang yang ingin menggunakan isi bebas"
-      }
+      "userId": 1,
+      "id": 1,
+      "image": 1,
+      "title": "Inovasi Sosial Hitachi adalah Powering Good",
+      "name": "Rahmat",
+      "date": "04:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur cupiditate voluptas nisi! Unde."
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "image": 2,
+      "title": "Suami Sebut Anita Kolopaking Murung Usai Ambil Legal Fee dari Pinangki",
+      "name": "Mohamad Ridwan Apriyadi",
+      "date": "08:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum."
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "image": 3,
+      "title": "Kesal Tak Dapat Proyek, Pria 37 Tahun di Kalbar Tikam Kepala Desa",
+      "name": "Yoga",
+      "date": "06:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a"
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "image": 4,
+      "title": "Update Covid-19 di Aceh, Sumut, Sumbar, Riau, Kepri, Jambi, dan Bengkulu 11 November 2020",
+      "name": "Bayu",
+      "date": "02:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur cupiditate"
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "image": 5,
+      "title": "Puluhan Penghuni Pondok Pesantren di Bojongsari Depok Positif Covid-19",
+      "name": "Adit",
+      "date": "01:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisqua"
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "image": 6,
+      "title": "Distribusi Bantuan Pangan Nontunai di Kembangan",
+      "name": "Muhammad Dafa Arohman",
+      "date": "10:00 AM",
+      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum aliquid a dolore repellendus quisquam consequatur"
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "image": 1,
+      "title": "Dana Desa Sisa Rp 34,6 Triliun, Hanya Bisa Digunakan untuk BLT dan PKTD",
+      "name": "Melly",
+      "date": "21:00 AM",
+      "deskripsi": "Wikipedia berawal sebagai proyek sampingan Nupedia berupa ensiklopedia bebas daring yang artikelnya ditulis oleh para ahli.[8] Larry Sanger, yang mendirikan Nupedia bersama Jimmy Wales, melontarkan ide mengenai ensiklopedi"
+    },
+    {
+      "userId": 2,
+      "id": 8,
+      "image": 2,
+      "title": "10 Lagu dan Podcast Terpopuler di Spotify Indonesia November 2020, Ada BLACKPINK",
+      "name": "Fitriani",
+      "date": "22:00 AM",
+      "deskripsi": "Sejak resmi diluncurkan pada tanggal 15 Januari 2001, Wikipedia bahasa Inggris telah mengalami perkembangan jumlah artikel yang luar biasa. Tanggal 21 Januari 2003, jumlah artikel yang dimiliki telah mencapai"
+    },
+    {
+      "userId": 2,
+      "id": 9,
+      "image": 3,
+      "title": "Ketika Lima Sutradara Bercerita dalam Quarantine Tales",
+      "name": "Anggi",
+      "date": "23:00 AM",
+      "deskripsi": "Setiap orang yang ingin menggunakan isi bebas Wikipedia, kapan pun, dapat mengunduh artikel yang mendekati versi terbaru di dalam pangkalan data untuk tujuan bebas, dengan syarat LDBG."
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "image": 1,
+      "title": "Dana Desa Sisa Rp 34,6 Triliun, Hanya Bisa Digunakan untuk BLT dan PKTD",
+      "name": "Melly",
+      "date": "21:00 AM",
+      "deskripsi": "Wikipedia berawal sebagai proyek sampingan Nupedia berupa ensiklopedia bebas daring yang artikelnya ditulis oleh para ahli.[8] Larry Sanger, yang mendirikan Nupedia bersama Jimmy Wales, melontarkan ide mengenai ensiklopedi"
+    },
+    {
+      "userId": 2,
+      "id": 8,
+      "image": 2,
+      "title": "10 Lagu dan Podcast Terpopuler di Spotify Indonesia November 2020, Ada BLACKPINK",
+      "name": "Fitriani",
+      "date": "22:00 AM",
+      "deskripsi": "Sejak resmi diluncurkan pada tanggal 15 Januari 2001, Wikipedia bahasa Inggris telah mengalami perkembangan jumlah artikel yang luar biasa. Tanggal 21 Januari 2003, jumlah artikel yang dimiliki telah mencapai"
+    },
+    {
+      "userId": 2,
+      "id": 9,
+      "image": 3,
+      "title": "Ketika Lima Sutradara Bercerita dalam Quarantine Tales",
+      "name": "Anggi",
+      "date": "23:00 AM",
+      "deskripsi": "Setiap orang yang ingin menggunakan isi bebas"
+    }
   ],
   "author": [
-    {   "userId": 1,
-        "id": 1,
-        "name": "Mohamad Ridwan Apriyadi",
-        "date": "07:00 AM"
+    {
+      "userId": 1,
+      "id": 1,
+      "name": "Mohamad Ridwan Apriyadi",
+      "date": "07:00 AM"
     },
-    {   "userId": 1,
-        "id": 2,
-        "name": "Maulana Yusuf",
-        "date": "08:00 AM"
+    {
+      "userId": 1,
+      "id": 2,
+      "name": "Maulana Yusuf",
+      "date": "08:00 AM"
     },
-    {   "userId": 1,
-        "id": 3,
-        "name": "Jahdan Fillah",
-        "date": "09:00 AM"
+    {
+      "userId": 1,
+      "id": 3,
+      "name": "Jahdan Fillah",
+      "date": "09:00 AM"
     },
-    {   "userId": 1,
-        "id": 4,
-        "name": "Muhammad Daffa Arohman",
-        "date": "10:00 AM"
+    {
+      "userId": 1,
+      "id": 4,
+      "name": "Muhammad Daffa Arohman",
+      "date": "10:00 AM"
     },
-    {   "userId": 1,
-        "id": 5,
-        "name": "Billy Trias Aji Jaya",
-        "date": "11:00 AM"
+    {
+      "userId": 1,
+      "id": 5,
+      "name": "Billy Trias Aji Jaya",
+      "date": "11:00 AM"
     },
-    {   "userId": 1,
-        "id": 6,
-        "name": "Dafanto Prayoga",
-        "date": "12:00 AM"
+    {
+      "userId": 1,
+      "id": 6,
+      "name": "Dafanto Prayoga",
+      "date": "12:00 AM"
     },
-    {   "userId": 1,
-        "id": 7,
-        "name": "Herdimas Saputra",
-        "date": "01:00 AM"
+    {
+      "userId": 1,
+      "id": 7,
+      "name": "Herdimas Saputra",
+      "date": "01:00 AM"
     },
-    {   "userId": 1,
-        "id": 8,
-        "name": "Bayu Saputra",
-        "date": "02:00 AM"
+    {
+      "userId": 1,
+      "id": 8,
+      "name": "Bayu Saputra",
+      "date": "02:00 AM"
     },
-    {   "userId": 1,
-        "id": 9,
-        "name": "Winda Maulia",
-        "date": "03:00 AM"
+    {
+      "userId": 1,
+      "id": 9,
+      "name": "Winda Maulia",
+      "date": "03:00 AM"
     },
-    {   "userId": 1,
-        "id": 10,
-        "name": "Ryan Yoga Saputra",
-        "date": "04:00 AM"
+    {
+      "userId": 1,
+      "id": 10,
+      "name": "Ryan Yoga Saputra",
+      "date": "04:00 AM"
     },
-    {   "userId": 2,
-        "id": 11,
-        "name": "Aji",
-        "date": "07:00 AM"
+    {
+      "userId": 2,
+      "id": 11,
+      "name": "Aji",
+      "date": "07:00 AM"
     },
-    {   "userId": 2,
-        "id": 12,
-        "name": "Monyong",
-        "date": "08:00 AM"
+    {
+      "userId": 2,
+      "id": 12,
+      "name": "Monyong",
+      "date": "08:00 AM"
     },
-    {   "userId": 2,
-        "id": 13,
-        "name": "Godeg",
-        "date": "09:00 AM"
+    {
+      "userId": 2,
+      "id": 13,
+      "name": "Godeg",
+      "date": "09:00 AM"
     },
-    {   "userId": 2,
-        "id": 14,
-        "name": "Rajuh",
-        "date": "10:00 AM"
+    {
+      "userId": 2,
+      "id": 14,
+      "name": "Rajuh",
+      "date": "10:00 AM"
     },
-    {   "userId": 2,
-        "id": 15,
-        "name": "Iqbal",
-        "date": "11:00 AM"
+    {
+      "userId": 2,
+      "id": 15,
+      "name": "Iqbal",
+      "date": "11:00 AM"
     },
-    {   "userId": 2,
-        "id": 16,
-        "name": "Agil",
-        "date": "12:00 AM"
+    {
+      "userId": 2,
+      "id": 16,
+      "name": "Agil",
+      "date": "12:00 AM"
     },
-    {   "userId": 2,
-        "id": 17,
-        "name": "Uta",
-        "date": "01:00 AM"
+    {
+      "userId": 2,
+      "id": 17,
+      "name": "Uta",
+      "date": "01:00 AM"
     },
-    {   "userId": 2,
-        "id": 18,
-        "name": "Ajot",
-        "date": "02:00 AM"
+    {
+      "userId": 2,
+      "id": 18,
+      "name": "Ajot",
+      "date": "02:00 AM"
     },
-    {   "userId": 2,
-        "id": 19,
-        "name": "Cepot",
-        "date": "03:00 AM"
+    {
+      "userId": 2,
+      "id": 19,
+      "name": "Cepot",
+      "date": "03:00 AM"
     },
-    {   "userId": 2,
-        "id": 20,
-        "name": "Rahmat",
-        "date": "04:00 AM"
+    {
+      "userId": 2,
+      "id": 20,
+      "name": "Rahmat",
+      "date": "04:00 AM"
     }
   ],
   "berita": [

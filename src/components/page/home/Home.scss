@@ -129,6 +129,21 @@
             margin: 0 0 0 20px;
         }
 
+        .label-change{
+            display: flex;
+            margin: 20px 0 0 20px;
+        }
+
+        .tes-input{
+            display: flex;
+            height: 30px;
+            width: 300px;
+            border: #555;
+            outline: none;
+            border-radius: 5px;
+            margin: 20px 0 0 20px;
+        }
+
         .box-input{
             display: flex;
             flex-direction: column;
