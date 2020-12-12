@@ -1,0 +1,39 @@
+.wrapper-product{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    margin: 40px 0 0 40px;
+
+    .nav-product{
+        display: flex;
+        position: relative;
+        height: auto;
+        width: auto;
+        background-color: greenyellow;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+
+        i{
+            display: flex;
+            font-size: 15pt;
+            cursor: pointer;
+        }
+
+        .indikator-total{
+            display: flex;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 500px;
+            justify-content: center;
+            align-items: center;
+            top: 1px;
+            right: 10px;
+            background-color: blue;
+            font-size: 11pt;
+            color: #fff;
+        }
+    }
+}

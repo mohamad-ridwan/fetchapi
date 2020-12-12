@@ -31,7 +31,7 @@ const Navbar = ()=>{
                     {/* menu Dropdown */}
                     <Dropdown
                         display={show ? 'flex' : 'none'}
-                        height={show ? '100px' : '0.1px'}
+                        height={show ? '120px' : '0.1px'}
                     />
                     {/* end menu Dropdown */}
                 </div>

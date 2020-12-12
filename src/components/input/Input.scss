@@ -1,0 +1,55 @@
+.kolum-input{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border: 1px solid #aaa;
+    margin-top: 20px;
+
+    .kolumGroup{
+        display: flex;
+        height: auto;
+        width: calc(100%/5);
+        border-right: 1px solid #aaa;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+
+        .avatar{
+            display: flex;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 500px;
+            background: #fff;
+            border: none;
+        }
+
+        .btnGroup{
+            display: flex;
+            height: 40px;
+            width: 80%;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            outline: none;
+            transition: 0.1s ease-in-out;
+            color: #fff;
+
+            &:hover{
+                height: 82%;
+                width: 82%;
+            }
+            cursor: pointer;
+        }
+
+        .btn-update{
+            background-color: rgb(77, 155, 0);
+        }
+
+        .btn-delete{
+            background-color: red;
+        }
+    }
+}

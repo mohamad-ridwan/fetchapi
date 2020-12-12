@@ -219,6 +219,11 @@
       "title": "qqqqqqqqqqqqqqqq",
       "deskripsi": "qqqqqqqqqqqqqqqq",
       "id": 28
+    },
+    {
+      "title": "",
+      "deskripsi": "",
+      "id": 29
     }
   ],
   "beritaTerkini": [
@@ -467,6 +472,44 @@
     {
       "id": 1,
       "image": ""
+    }
+  ],
+  "pegawai": [
+    {
+      "id": 1607777516162,
+      "image": null,
+      "nama": "Shinta ",
+      "jabatan": "Mantan ke 1"
+    },
+    {
+      "id": 1607777742665,
+      "image": null,
+      "nama": "Winda Maulia",
+      "jabatan": "Mantan ke 2"
+    },
+    {
+      "id": 1607777764053,
+      "image": null,
+      "nama": "Mellysa Rahma",
+      "jabatan": "Mantan ke 3"
+    },
+    {
+      "id": 1607777785388,
+      "image": null,
+      "nama": "Anggi Fitria",
+      "jabatan": "Mantan ke 4"
+    },
+    {
+      "id": 1607777817532,
+      "image": null,
+      "nama": "Cantika",
+      "jabatan": "Mantan ke 5"
+    },
+    {
+      "id": 1607777836977,
+      "image": null,
+      "nama": "Mandy",
+      "jabatan": "Mantan ke 6"
     }
   ]
 }

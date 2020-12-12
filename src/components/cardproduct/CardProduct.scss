@@ -1,0 +1,25 @@
+.wrapper-card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+
+    .img-card{
+        display: flex;
+        height: 350px;
+        width: 100%;
+    }
+
+    .nameP{
+        display: flex;
+    }
+
+    .priceP{
+        display: flex;
+    }
+}

@@ -5,34 +5,44 @@ import './Dropdown.scss'
 const Dropdown = ({
     display,
     height
-})=>{
-    return(
+}) => {
+    return (
         <>
-        {/* dropdown */}
-        <ul className="menu-dropdown"
-            style={{
-                display: `${display}`,
-                height: `${height}`,
-                transition : '0.4s ease'
-            }}
-        >
-            <li className="list-menu">
-                <Link to="/" className="page">
-                    Home
+            {/* dropdown */}
+            <ul className="menu-dropdown"
+                style={{
+                    display: `${display}`,
+                    height: `${height}`,
+                    transition: '0.4s ease'
+                }}
+            >
+                <li className="list-menu">
+                    <Link to="/" className="page">
+                        Home
                 </Link>
-            </li>
-            <li className="list-menu">
-                <Link to="/berita" className="page">
-                    Berita
+                </li>
+                <li className="list-menu">
+                    <Link to="/berita" className="page">
+                        Berita
                 </Link>
-            </li>
-            <li className="list-menu">
-                <Link to="/gallery" className="page">
-                    Gallery
+                </li>
+                <li className="list-menu">
+                    <Link to="/gallery" className="page">
+                        Gallery
                 </Link>
-            </li>
-        </ul>
-        {/* end dropdown */}
+                </li>
+                <li className="list-menu">
+                    <Link to="/product" className="page">
+                        Product
+                </Link>
+                </li>
+                <li className="list-menu">
+                    <Link to="/input-data" className="page">
+                        Input Data
+                </Link>
+                </li>
+            </ul>
+            {/* end dropdown */}
         </>
     )
 }

@@ -1,0 +1,43 @@
+.box-input{
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+    overflow: hidden;
+
+    .btnGroup{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        background-color: blue;
+        color: #fff;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+    }
+
+    .btn-minus{
+        display: flex;
+        position: absolute;
+        left: 0;
+    }
+
+    .btn-plus{
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+
+    .txt-input{
+        display: flex;
+        height: 40px;
+        width: 100%;
+        border: 1px solid #aaa;
+        outline: none;
+        border-radius: 10px;
+        text-align: center;
+    }
+}

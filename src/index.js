@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import NonReactStatics from 'hoist-non-react-statics'
+import WrapperContext from './config/WrapperContext';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <WrapperContext>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </WrapperContext>,
   document.getElementById('root')
 );
 

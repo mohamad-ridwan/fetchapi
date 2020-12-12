@@ -14,12 +14,14 @@
     .list-menu{
         display: flex;
         list-style: none;
+        overflow: hidden;
 
         .page{
             display: flex;
             text-decoration: none;
             color: #fff;
             transition: 0.3s ease-out;
+            overflow: hidden;
 
             &:hover{
                 color: #ddd;
